@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingActivity">
+
+    <Button
+        android:id="@+id/button_search"
+        android:layout_width="wrap_content"
+        android:onClick="discoverDevices"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="94dp"
+        android:layout_marginBottom="265dp"
+        android:text="Wyszukaj Polaczenia" />
+
+    <Spinner
+        android:id="@+id/spinner_connected_blue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="27dp" />
+
+    <Button
+        android:id="@+id/button_connected_blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="309dp"
+        android:text="Polacz!" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="34dp"
+        android:layout_marginBottom="142dp"
+        android:text="Wymagane ustawienie uprawnienia lokalizacji dla tej aplikacji! Jednocześnie bluetooth musi być włączony." />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="34dp"
+        android:layout_marginBottom="98dp"
+        android:text="Jeżeli po sparowaniu/połączeniu nie działa obsługa mikrokontrolera, Wyszukaj połaczenie na nowo i połącz!" />
+</RelativeLayout>
